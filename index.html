@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DudeShape - Modern Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DudeShape</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" data-i18n="home">Home</a></li>
+                    <li><a href="#about" data-i18n="about">About</a></li>
+                    <li><a href="#features" data-i18n="features">Features</a></li>
+                    <li><a href="#contact" data-i18n="contact">Contact</a></li>
+                </ul>
+                <div class="nav-right">
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="language-selector">
+                        <select id="language-select">
+                            <option value="en">English</option>
+                            <option value="uz">O'zbekcha</option>
+                            <option value="ru">Русский</option>
+                        </select>
+                    </div>
+                    <div class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-i18n="heroTitle">We Help You Make Modern Furniture</h1>
+                    <p data-i18n="heroSubtitle">We will help you to make an elegant and luxurious interior designed by professional interior designer.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Modern interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trusted">
+        <div class="container">
+            <h2 data-i18n="trustedBy">Trusted by 20,000+ companies</h2>
+            <div class="brand-logos">
+                <div class="brand-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" alt="Mastercard">
+                </div>
+                <div class="brand-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1280px-Airbnb_Logo_B%C3%A9lo.svg.png" alt="Airbnb">
+                </div>
+                <div class="brand-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Uber_logo_2018.svg/2560px-Uber_logo_2018.svg.png" alt="Uber">
+                </div>
+                <div class="brand-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1280px-PayPal.svg.png" alt="PayPal">
+                </div>
+                <div class="brand-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1280px-Visa_Inc._logo.svg.png" alt="Visa">
+                </div>
+                <div class="brand-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png" alt="Stripe">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 data-i18n="aboutUs">About Us</h2>
+                    <p data-i18n="aboutDescription">All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3 data-i18n="bestQuality">Best Quality</h3>
+                                <p data-i18n="qualityDescription">All of our furniture uses the best materials and choices</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3 data-i18n="freeShipping">Free Shipping</h3>
+                                <p data-i18n="shippingDescription">All of our furniture uses the best materials and choices</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon shipping-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3 data-i18n="freeShipping">Free Shipping</h3>
+                                <p data-i18n="shippingDescription">All of our furniture uses the best materials and choices</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Modern living room">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="features" class="popular-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="popularProducts">Our Popular Products</h2>
+                <div class="section-controls">
+                    <a href="#" class="view-more" data-i18n="viewMore">View More</a>
+                    <div class="slider-controls">
+                        <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="products-slider">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="White Swan Chair">
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name-colors">
+                            <h3 data-i18n="whiteSwanChair">White Swan Chair</h3>
+                            <div class="color-options">
+                                <span class="color-option orange"></span>
+                                <span class="color-option blue"></span>
+                            </div>
+                        </div>
+                        <div class="product-price-action">
+                            <p class="price">$40</p>
+                            <button class="buy-now-btn" data-i18n="buyNow">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="White Swan Chair">
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name-colors">
+                            <h3 data-i18n="whiteSwanChair">White Swan Chair</h3>
+                            <div class="color-options">
+                                <span class="color-option orange"></span>
+                                <span class="color-option blue"></span>
+                            </div>
+                        </div>
+                        <div class="product-price-action">
+                            <p class="price">$40</p>
+                            <button class="buy-now-btn" data-i18n="buyNow">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=958&q=80" alt="White Swan Chair">
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name-colors">
+                            <h3 data-i18n="whiteSwanChair">White Swan Chair</h3>
+                            <div class="color-options">
+                                <span class="color-option orange"></span>
+                                <span class="color-option blue"></span>
+                            </div>
+                        </div>
+                        <div class="product-price-action">
+                            <p class="price">$40</p>
+
+<button class="buy-now-btn" data-i18n="buyNow">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="all-furniture">
+        <div class="container">
+            <h2 data-i18n="allFurniture">All Furniture</h2>
+            
+            <div class="category-tabs">
+                <button class="tab-btn active" data-i18n="shopByRoom">Shop By Room</button>
+                <button class="tab-btn" data-i18n="shopByCategory">Shop By Category</button>
+                <button class="tab-btn" data-i18n="shopByStyle">Shop By Style</button>
+            </div>
+            
+            <div class="furniture-grid">
+                <div class="furniture-showcase">
+                    <div class="showcase-image">
+                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Office furniture">
+                        <div class="overlay">
+                            <h3 data-i18n="office">Office</h3>
+                            <p><span>20+</span> <span data-i18n="products">Products</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-categories">
+                    <div class="room-category">
+                        <i class="fas fa-couch"></i>
+                        <span data-i18n="livingRoom">Living Room</span>
+                    </div>
+                    <div class="room-category">
+                        <i class="fas fa-utensils"></i>
+                        <span data-i18n="kitchen">Kitchen</span>
+                    </div>
+                    <div class="room-category">
+                        <i class="fas fa-coffee"></i>
+                        <span data-i18n="diningRoom">Dining Room</span>
+                    </div>
+                    <div class="room-category active">
+                        <i class="fas fa-briefcase"></i>
+                        <span data-i18n="office">Office</span>
+                    </div>
+                    <div class="room-category">
+                        <i class="fas fa-bed"></i>
+                        <span data-i18n="bedRoom">Bed Room</span>
+                    </div>
+                    <div class="room-category">
+                        <i class="fas fa-door-open"></i>
+                        <span data-i18n="hallway">Hallway</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="testimonial">
+        <div class="container">
+            <div class="testimonial-content">
+                <div class="testimonial-image">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Furniture">
+                    </div>
+                    <div class="circle-bg"></div>
+                </div>
+                
+                <div class="testimonial-text">
+                    <h2 data-i18n="customersImportant">Our customers are verry importan to us</h2>
+                    <p data-i18n="testimonialDescription">All of our furniture uses the best matials and choices for our customers.All of our furniture uses the best materials and choices for our customers.</p>
+                    
+                    <div class="customer-review">
+                        <div class="customer-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
+                        </div>
+                        <div class="customer-info">
+                            <p class="customer-name">Mr. Jason</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="subscribe">
+        <div class="container">
+            <div class="subscribe-content">
+                <h2 data-i18n="subscribeTitle">Subscribe to get the latest news about us</h2>
+                <p data-i18n="subscribeDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore.</p>
+                
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Enter your email" data-i18n-placeholder="enterEmail">
+                    <button type="submit" data-i18n="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>DudeShape</h3>
+                    <p data-i18n="footerDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore.</p>
+                    <div class="social-links">
+                        <p data-i18n="followUs">Follow Us :</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-i18n="takeATour">Take a Tour</h3>
+                    <ul>
+                        <li><a href="#features" data-i18n="features">Features</a></li>
+                        <li><a href="#" data-i18n="pricing">Pricing</a></li>
+                        <li><a href="#" data-i18n="product">Product</a></li>
+                        <li><a href="#" data-i18n="support">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-i18n="ourCompany">Our Company</h3>
+                    <ul>
+                        <li><a href="#about" data-i18n="about">About Us</a></li>
+                        <li><a href="#" data-i18n="blog">Blog</a></li>
+                        <li><a href="#" data-i18n="media">Media</a></li>
+                        <li><a href="#contact" data-i18n="contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-i18n="subscribe">Subscribe</h3>
+                    <p data-i18n="subscribeFooter">Subscribe to get the latest news from us</p>
+                    <div class="footer-subscribe">
+                        <input type="email" placeholder="Email Address" data-i18n-placeholder="emailAddress">
+                        <button type="submit">→</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p data-i18n="copyright">Copyright © 2023. Crafted with love.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
