@@ -13,7 +13,9 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">DudeShape</div>
+                <div class="logo">
+                    <img src="./logo.png" alt="">
+                </div>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home" data-i18n="home">Home</a></li>
                     <li><a href="#about" data-i18n="about">About</a></li>
@@ -21,9 +23,6 @@
                     <li><a href="#contact" data-i18n="contact">Contact</a></li>
                 </ul>
                 <div class="nav-right">
-                    <div class="search-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
                     <div class="language-selector">
                         <select id="language-select">
                             <option value="en">English</option>
@@ -53,33 +52,7 @@
         </div>
     </section>
 
-    <section class="trusted">
-        <div class="container">
-            <h2 data-i18n="trustedBy">Trusted by 20,000+ companies</h2>
-            <div class="brand-logos">
-                <div class="brand-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" alt="Mastercard">
-                </div>
-                <div class="brand-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1280px-Airbnb_Logo_B%C3%A9lo.svg.png" alt="Airbnb">
-                </div>
-                <div class="brand-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Uber_logo_2018.svg/2560px-Uber_logo_2018.svg.png" alt="Uber">
-                </div>
-                <div class="brand-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1280px-PayPal.svg.png" alt="PayPal">
-                </div>
-                <div class="brand-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1280px-Visa_Inc._logo.svg.png" alt="Visa">
-                </div>
-                <div class="brand-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png" alt="Stripe">
-                </div>
-            </div>
-        </div>
-    </section>
-
-<section id="about" class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
@@ -143,7 +116,6 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="White Swan Chair">
-                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="product-info">
                         <div class="product-name-colors">
@@ -163,7 +135,6 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="White Swan Chair">
-                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="product-info">
                         <div class="product-name-colors">
@@ -183,7 +154,6 @@
                 <div class="product-card">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=958&q=80" alt="White Swan Chair">
-                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="product-info">
                         <div class="product-name-colors">
@@ -207,23 +177,7 @@
     <section class="all-furniture">
         <div class="container">
             <h2 data-i18n="allFurniture">All Furniture</h2>
-            
-            <div class="category-tabs">
-                <button class="tab-btn active" data-i18n="shopByRoom">Shop By Room</button>
-                <button class="tab-btn" data-i18n="shopByCategory">Shop By Category</button>
-                <button class="tab-btn" data-i18n="shopByStyle">Shop By Style</button>
-            </div>
-            
             <div class="furniture-grid">
-                <div class="furniture-showcase">
-                    <div class="showcase-image">
-                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Office furniture">
-                        <div class="overlay">
-                            <h3 data-i18n="office">Office</h3>
-                            <p><span>20+</span> <span data-i18n="products">Products</span></p>
-                        </div>
-                    </div>
-                </div>
                 
                 <div class="room-categories">
                     <div class="room-category">
@@ -238,7 +192,7 @@
                         <i class="fas fa-coffee"></i>
                         <span data-i18n="diningRoom">Dining Room</span>
                     </div>
-                    <div class="room-category active">
+                    <div class="room-category">
                         <i class="fas fa-briefcase"></i>
                         <span data-i18n="office">Office</span>
                     </div>
@@ -274,7 +228,7 @@
                             <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
                         </div>
                         <div class="customer-info">
-                            <p class="customer-name">Mr. Jason</p>
+                            <p class="customer-name">Mr. Samandar</p>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>

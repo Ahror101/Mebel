@@ -60,13 +60,17 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    height: 100%;
+    height: 90px;
 }
 
 .logo {
     font-size: 24px;
     font-weight: 700;
     color: #115e59;
+}
+
+.logo img {
+    height: 50px;
 }
 
 .nav-links {
@@ -434,48 +438,9 @@ nav {
     margin-bottom: 30px;
 }
 
-.category-tabs {
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid #e5e7eb;
-    margin-bottom: 40px;
-}
-
-.tab-btn {
-    padding: 16px 24px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #6b7280;
-    position: relative;
-    transition: color 0.3s;
-}
-
-.tab-btn.active {
-    color: #115e59;
-}
-
-.tab-btn.active::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #115e59;
-}
-
 .furniture-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    width: 100%;
     gap: 24px;
-}
-
-.furniture-showcase {
-    position: relative;
-    height: 100%;
-    background-color: #115e59;
-    border-radius: 8px;
-    overflow: hidden;
 }
 
 .showcase-image {
@@ -516,6 +481,8 @@ nav {
 }
 
 .room-categories {
+    width: 100%;
+    height: 350px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
@@ -536,30 +503,21 @@ nav {
 }
 
 .room-category i {
-    font-size: 24px;
+    font-size: 38px;
     color: #6b7280;
 }
 
 .room-category span {
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 500;
     color: #4b5563;
 }
 
-.room-category.active {
-    background-color: #115e59;
-}
-
-.room-category.active i,
-.room-category.active span {
-    color: white;
-}
 
 .room-category:hover:not(.active) {
     border-color: #115e59;
 }
 
-/* Testimonial Section */
 .testimonial {
     padding: 60px 0;
 }
