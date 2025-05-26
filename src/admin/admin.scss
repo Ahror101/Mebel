@@ -1,0 +1,46 @@
+.admin-container {
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        background-color: #218838;
+      }
+    }
+  }
+
+  .product-list {
+    margin-top: 30px;
+
+    .product-item {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+
+      img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+      }
+    }
+  }
+}
