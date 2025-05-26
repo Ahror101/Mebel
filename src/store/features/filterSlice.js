@@ -2,13 +2,16 @@ import { createSlice } from "@reduxjs/toolkit";
 import { data } from "../../data/data";
 
 const initialState = {
-    products: [...data],
+    products: [],
 };
 
 export const filterSlice = createSlice({
     name: "filter",
     initialState,
     reducers: {
+        getProducts: (state, action) => {
+            state.products = action.payload
+        },
         handleSort: (state, action) => {
             if (action.payload === "Low") {
                 state.products = [...state.products.sort((a, b) => a.price > b.price ? 1 : -1)]
@@ -33,5 +36,5 @@ export const filterSlice = createSlice({
 });
 
 export const filterReducer = filterSlice.reducer;
-export const { handleSort, handleCategory } =
+export const { handleSort, handleCategory, getProducts } =
     filterSlice.actions;
