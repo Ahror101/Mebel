@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { data } from "../../data/data";
 
 const initialState = {
+    store: [],
     products: [],
 };
 
@@ -10,6 +10,7 @@ export const filterSlice = createSlice({
     initialState,
     reducers: {
         getProducts: (state, action) => {
+            state.store = action.payload
             state.products = action.payload
         },
         handleSort: (state, action) => {
@@ -23,9 +24,9 @@ export const filterSlice = createSlice({
         },
         handleCategory: (state, action) => {
             if (action.payload === "All") {
-                state.products = [...data];
+                state.products = [...state.store];
             } else {
-                const categoryItems = data.filter((item) => {
+                const categoryItems = state.products.filter((item) => {
                     return item.category === action.payload;
                 });
                 state.products = categoryItems;
