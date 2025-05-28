@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import "./productCard.scss";
 import { HiShoppingCart } from "react-icons/hi";
@@ -9,10 +8,11 @@ import { addToCart } from '../../store/features/cartSlice';
 const ProductCard = (props) => {
     const { image, title, category, price, oldPrice, item } = props;
     const dispatch = useDispatch();
+    
     return (
         <div data-aos="fade-up" className="product-card pb-5 d-flex flex-column col-12 col-md-4 col-lg-3">
             <div className="product-image mb-1">
-                <Link to={`/shop/${item.id}`}><img src={image} alt="product" /></Link>
+                <Link to={`/shop/${item.Id}`}><img src={image} alt="product" /></Link>
             </div>
             <div className="product-info px-3 d-flex flex-column">
                 <span className='product-category'>{category}</span>

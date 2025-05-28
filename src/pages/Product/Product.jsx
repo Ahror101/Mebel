@@ -1,21 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { data } from "../../data/data";
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../../store/features/cartSlice';
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 
 const Product = () => {
     const { id } = useParams();
+    const { products } = useSelector((state) => state.products);
     const [product, setProduct] = useState()
     const dispatch = useDispatch();
 
     useEffect(() => {
-        const productDetail = data.find((item) =>
-            +item.id === +id
+        const productDetail = products.find((item) =>
+            +item.Id === +id
         );
         setProduct(productDetail)
     }, [id])
+    
     return (
         <div className="product page-container">
             <div className="pt-5 back-shop">
